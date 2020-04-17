@@ -7,17 +7,16 @@
   </head>
   <body>
     <script>
-      
       function yuGiOh(n) {
         var array = [];
-        for (var i = 1; array.length<n; i++) {
-          if (i % 30==0) {
+        for (var i = 1; array.length < n; i++) {
+          if (i % 30 == 0) {
             array.push("yu-gi-oh");
-          } else if (i % 6==0) {
+          } else if (i % 6 == 0) {
             array.push("yu-gi");
-          } else if (i % 10 == 0 ) {
+          } else if (i % 10 == 0) {
             array.push("yu-oh");
-          } else if (i % 15 == 0 ) {
+          } else if (i % 15 == 0) {
             array.push("gi-oh");
           } else if (i % 2 == 0) {
             array.push("yu");
@@ -26,19 +25,15 @@
           } else if (i % 5 == 0) {
             array.push("oh");
           } else {
-              array.push(i);
+            array.push(i);
           }
         }
-       
+
         return array;
-        
-
       }
-     console.log(yuGiOh(100));
-     console.log(yuGiOh(250));
-     
+      console.log(yuGiOh(100));
+      console.log(yuGiOh(250));
 
-     
     </script>
   </body>
 </html>
